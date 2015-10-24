@@ -45,7 +45,7 @@ After each image has been downloaded to your Docker server, run the following co
     # Create Neo4j database with links to HDFS and Mazerunner
     # Replace <user> and <neo4j-path>
     # with the location to your existing Neo4j database store directory
-    docker run -d -P -v /Users/<user>/<neo4j-path>/data:/opt/data --name graphdb --link mazerunner:mazerunner --link hdfs:hdfs kbastani/docker-neo4j:2.2.1
+    docker run -d -P -v /Users/<user>/<neo4j-path>/data:/opt/data --name graphdb --link mazerunner:mazerunner --link hdfs:hdfs atomicjets/docker-neo4j:2.2.1
 
 ### Use Existing Neo4j Database
 
