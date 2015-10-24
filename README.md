@@ -25,13 +25,13 @@ The Neo4j Mazerunner service in this image is a [unmanaged extension](http://neo
 Installation requires 3 docker image deployments, each containing a separate linked component.
 
 * *Hadoop HDFS* (sequenceiq/hadoop-docker:2.4.1)
-* *Neo4j Graph Database* (kbastani/docker-neo4j:2.2.1)
+* *Neo4j Graph Database* (atomicjets/docker-neo4j:2.2.2)
 * *Apache Spark Service* (kbastani/neo4j-graph-analytics:1.1.0)
 
 Pull the following docker images:
 
     docker pull sequenceiq/hadoop-docker:2.4.1
-    docker pull kbastani/docker-neo4j:2.2.1
+    docker pull atomicjets/docker-neo4j:2.2.2
     docker pull kbastani/neo4j-graph-analytics:1.1.0
 
 After each image has been downloaded to your Docker server, run the following commands in order to create the linked containers.
